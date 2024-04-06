@@ -130,7 +130,7 @@ body {
 
 .period {
   word-wrap: break-word;
-  width: 50%;
+  width: 100%;
   flex-direction: column;
   display: flex;
   justify-content: center;
