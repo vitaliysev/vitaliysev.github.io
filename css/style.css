@@ -166,7 +166,7 @@ body {
   flex-direction: row;
 }
 .link {
-  margin-left: 2px;
+  margin-left: 2vh;
   width: 33%;
   height: 100%;
 }
