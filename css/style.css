@@ -19,7 +19,6 @@ body {
   border-radius: 10px;
   margin: 45px auto 20px auto;
   min-height: 20vh;
-  flex-shrink: 0;
   background-color: #FFEBCD;
   text-align: center;
 }
