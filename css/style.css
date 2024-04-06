@@ -18,7 +18,7 @@ body {
   display: flex;
   border-radius: 10px;
   margin: 45px auto 20px auto;
-  height: 5vh;
+  min-height: 5vh;
   background-color: #FFEBCD;
   text-align: center;
 }
@@ -148,7 +148,7 @@ body {
   flex-direction: column;
   border-radius: 10px;
   margin: 20px auto 20px auto;
-  height: 7vh;
+  min-height: 7vh;
   background-color: #FFEBCD;
   text-align: center;
   justify-content: center;
