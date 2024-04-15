@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Сайт-резюме">
+    <meta name="Keywords" content="Сайт, резюме, навыки, интересы, обо мне">
+    <meta name="Author" content="Коробко Виталий">
     <title>About me</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,23 +14,23 @@
   <h1 class = "header-title">About me</h1>
 </header>
 <section class = "content">
-    <div class = "main_information">
+    <div class = "information">
         <img class = "my_photo" alt = "my_personal_photo" src="img/my_photo.avif">
     </div>
-    <div class = "main_information">
+    <div class = "information">
         <h2 class = "title">Vitalii Korobko</h2>
         <p class = "text"> student, programmer, basketball player</p>
     </div>
-    <div class = "specific_information">
+    <div class = "information border_top_and_margin_up">
         <h2 class = "title">Skills</h2>
-        <div class = "languages">
-            <p class = "language">C++</p>
-            <p class = "language">Python</p>
-            <p class = "language">SQL</p>
-            <p class = "language">HTML + CSS</p>
-        </div>
+        <ul class = "languages">
+            <li>С++</li>
+            <li>Python</li>
+            <li>HTML + CSS</li>
+             <li>SQL</li>
+        </ul>
     </div>
-    <div class = "education">
+    <div class = "information border_top_and_margin_up">
         <h2 class = "title" >Education</h2>
         <div class = "option">
             <h2 class = "title smaller_title">School</h2>
@@ -42,20 +45,24 @@
             <p class = "type">Moscow Institute of Physics and Technology</p>
         </div>
     </div>
-    <div class = "specific_information">
+    <div class = "information border_top_and_margin_up without_padding">
         <h2 class = "title">Interests</h2>
         <div class = "options">
-            <div class = "photo_box">
-                <img class = "interest_photo" alt="basketball" src="img/basketball.avif">
+            <div class = "option1 option1_with_bottom_and_right_border">
+                <div class = "photo_box">
+                    <img class = "interest_photo" alt="basketball" src="img/basketball.avif">
+                </div>
+                <div class = "photo_box photo_box_with_left_border">
+                    <img class = "interest_photo" alt="books" src="img/books.avif">
+                </div>
             </div>
-            <div class = "photo_box">
-                <img class = "interest_photo" alt="books" src="img/books.avif">
-            </div>
-            <div class = "photo_box">
-                <img class = "interest_photo" alt="english" src="img/english.avif">
-            </div>
-            <div class = "photo_box">
-                <img class = "interest_photo" alt="music" src="img/music.avif">
+            <div class = "option1">
+                <div class = "photo_box">
+                    <img class = "interest_photo" alt="english" src="img/english.avif">
+                </div>
+                <div class = "photo_box photo_box_with_left_border">
+                    <img class = "interest_photo" alt="music" src="img/music.avif">
+                </div>
             </div>
         </div>
     </div>
