@@ -18,15 +18,14 @@ body {
     body, p, h1 {
         font-size: 1.2rem;
     }
-    .options {
+    .information__interests {
        flex-direction: column;
     }
-    .option1_with_bottom_and_right_border {
+    .information__interests__interest__with_bottom_and_right_border {
       border-bottom: solid 1px white;
     }
-
-    .interest_photo {
-      width: 30%;
+    .information__interests__interest__photo_box__interest_photo {
+      height:10%;
     }
 
 }
@@ -39,14 +38,14 @@ body {
   background-color: #FFEBCD;
   text-align: center;
 }
-.header-title {
+.header__title {
   margin-up: 10px;
   color: black;
   text-transform: uppercase;
   font-weight: 500;
   margin : auto;
 }
-.content {
+section {
   background-color: #FFEBCD;
   border-radius: 10px;
   display: flex;
@@ -75,7 +74,7 @@ body {
  padding-left: 0;
   padding-right: 0;
 }
-.my_photo {
+.information__my_photo {
   box-shadow: 0 0 7px #666;
   border-radius: 50%;
   overflow: hidden;
@@ -90,19 +89,18 @@ body {
 .text {
   font-weight: 500;
   word-wrap: break-word;
-  padding-right: 2%;
 }
 
 .smaller_title {
   font-size: 130%;
 }
-.interest_photo {
+.information__interests__interest__photo_box__interest_photo {
   padding-right: 4%;
   padding-left: 4%;
   height: 100%;
   width:100%;
 }
-.languages {
+.information__skills {
   margin-top: 0;
   margin-bottom :0;
   list-style-type: none;
@@ -111,11 +109,6 @@ body {
   text-align: center;
   flex-direction: column;
   padding-left: 0;
-}
-.language {
-
-  width : 100%;
-  font-weight: 500;
 }
 
 .option {
@@ -126,27 +119,26 @@ body {
   justify-content: center;
   align-items: center;
 }
-.type {
+.information__school {
   width : 100%;
   font-weight: 500;
 }
-.options {
+.information__interests {
   border-right:none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.option1 {
+.information__interests__interest {
   border-right: none;
   width : 100%;
   display:flex;
   flex-direction: row;
 }
-.option1_with_bottom_and_right_border {
+.information__interests__interest__with_bottom_and_right_border {
   border-right:solid 1px white;
 }
-
-.photo_box {
+.information__interests__interest__photo_box {
   border-right:none;
   justify-content: center;
   align-items: center;
@@ -154,16 +146,8 @@ body {
   width : 100%;
   height: 100%;
 }
-.photo_box_with_left_border {
+.information__interests__interest__photo_box__with_left_border {
     border-left: solid 1px white;
-}
-.data {
-  width: 100%;
-  display : flex;
-  flex-direction: row;
-}
-.no_up {
- margin-up = 0;
 }
 .footer {
   padding-bottom: 10px;
@@ -178,7 +162,7 @@ body {
   align-items: center;
   flex-shrink: 0;
 }
-.links {
+.footer__links {
   align-items: center;
   justify-content: center;
   height: 80%;
@@ -187,7 +171,7 @@ body {
   display: flex;
   flex-direction: row;
 }
-.link {
+.footer__links__link {
   width: 33%;
   height: 100%;
 }
