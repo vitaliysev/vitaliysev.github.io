@@ -14,21 +14,7 @@ body {
   margin-left: auto;
 }
 
-@media (max-width: 768px) {
-    body, p, h1 {
-        font-size: 1.2rem;
-    }
-    .information__interests {
-       flex-direction: column;
-    }
-    .information__interests__interest__with_bottom_and_right_border {
-      border-bottom: solid 1px white;
-    }
-    .information__interests__interest__photo_box__interest_photo {
-      height:10%;
-    }
 
-}
 .header {
   display: flex;
   border-radius: 10px;
@@ -181,4 +167,19 @@ section {
 }
 .with_margin {
   margin-top: 10px;
+}
+@media (max-width: 768px) {
+    body, p, h1 {
+        font-size: 1.2rem;
+    }
+    .information__interests {
+       flex-direction: column;
+    }
+    .information__interests__interest__with_bottom_and_right_border {
+      border-bottom: solid 1px white;
+      border-right: none;
+    }
+    .information__interests__interest__photo_box__interest_photo {
+      height:10%;
+    }
 }
