@@ -3,81 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Сайт-резюме">
-    <meta name="Keywords" content="Сайт, резюме, навыки, интересы, обо мне">
-    <meta name="Author" content="Коробко Виталий">
+    <meta name="description" content="Page-summary about me">
+    <meta name="Keywords" content="Summary, skills, interests, about me">
+    <meta name="Author" content="Korobko Vitalii">
     <title>About me</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class = "page">
 <header class = "header">
   <h1 class = "header__title">About me</h1>
 </header>
-<section>
+<main class = "content">
     <div class = "information">
-        <img class = "information__my_photo" alt = "my_personal_photo" src="img/my_photo.avif">
+        <img class = "information__my-photo" alt = "my_personal_photo" src="img/my_photo.avif">
     </div>
     <div class = "information">
         <h2 class = "title">Vitalii Korobko</h2>
         <p class = "text"> student, programmer, basketball player</p>
     </div>
-    <div class = "information border_top_and_margin_up">
+    <div class = "information information_border_top">
         <h2 class = "title">Skills</h2>
-        <ul class = "information__skills">
+        <ul class = "list">
             <li>С++</li>
             <li>Python</li>
             <li>HTML + CSS</li>
              <li>SQL</li>
         </ul>
     </div>
-    <div class = "information border_top_and_margin_up">
+    <div class = "information information_border_top">
         <h2 class = "title" >Education</h2>
-        <div class = "information__option">
-            <h2 class = "title title__smaller_title">School</h2>
-        </div>
-        <div class = "information__option">
-            <p class = "information__option__school">Sevastopol Gymnasium 1 named after A.S.Pushkin</p>
-        </div>
-        <div class = "information__option">
-            <h2 class = "title smaller_title">University</h2>
-        </div>
-        <div class = "information__option">
-            <p class = "information__option__school">Moscow Institute of Physics and Technology</p>
-        </div>
+        <h2 class = "title title_smaller">School</h2>
+        <p class = "text">Sevastopol Gymnasium 1 named after A.S.Pushkin</p>
+        <h2 class = "title title_smaller">University</h2>
+        <p class = "text">Moscow Institute of Physics and Technology</p>
     </div>
-    <div class = "information border_top_and_margin_up without_padding">
+    <div class = "information information_border_top information_without-padding">
         <h2 class = "title">Interests</h2>
         <div class = "information__interests">
-            <div class = "information__interests__interest information__interests__interest__with_bottom_and_right_border">
-                <div class = "information__interests__interest__photo_box">
-                    <img class = "information__interests__interest__photo_box__interest_photo" alt="basketball" src="img/basketball.avif">
+            <div class = "information__interest information__interest_with-bottom-and-right-border">
+                <div class = "information__photo-box">
+                    <img class = "information__interest-photo" alt="basketball" src="img/basketball.avif">
                 </div>
-                <div class = "information__interests__interest__photo_box information__interests__interest__photo_box__with_left_border">
-                    <img class = "information__interests__interest__photo_box__interest_photo" alt="books" src="img/books.avif">
+                <div class = "information__photo-box information__photo-box_with-left-border">
+                    <img class = "information__interest-photo" alt="books" src="img/books.avif">
                 </div>
             </div>
-            <div class = "information__interests__interest">
-                <div class = "information__interests__interest__photo_box">
-                    <img class = "information__interests__interest__photo_box__interest_photo" alt="english" src="img/english.avif">
+            <div class = "information__interest">
+                <div class = "information__photo-box">
+                    <img class = "information__interest-photo" alt="english" src="img/english.avif">
                 </div>
-                <div class = "information__interests__interest__photo_box information__interests__interest__photo_box__with_left_border">
-                    <img class = "information__interests__interest__photo_box__interest_photo" alt="music" src="img/music.avif">
+                <div class = "information__photo-box information__photo-box_with-left-border">
+                    <img class = "information__interest-photo" alt="music" src="img/music.avif">
                 </div>
             </div>
         </div>
     </div>
-</section>
+</main>
 <footer class = "footer">
-    <p class = "with_margin">Links</p>
+    <p class = "text text_with-margin">Links</p>
     <div class = "footer__links">
-        <div class = "footer__links__link">
-            <a href="https://t.me/Vitaliy_sev"><img class = "social_link" alt = "telegram" src="img/telegram.avif"></a>
+        <div class = "footer__link">
+            <a href="https://t.me/Vitaliy_sev"><img class = "social-link" alt = "telegram" src="img/telegram.avif"></a>
         </div>
-        <div class = "footer__links__link">
-            <a href="https://vk.com/id342291718"><img class = "social_link" alt = "VK" src="img/VK.avif"></a>
+        <div class = "footer__link">
+            <a href="https://vk.com/id342291718"><img class = "social-link" alt = "VK" src="img/VK.avif"></a>
         </div>
-        <div class = "footer__links__link">
-            <a href="https://github.com/vitaliysev"><img class = "social_link" alt = "Github" src="img/github.avif"></a>
+        <div class = "footer__link">
+            <a href="https://github.com/vitaliysev"><img class = "social-link" alt = "Github" src="img/github.avif"></a>
         </div>
     </div>
 </footer>
