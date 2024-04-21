@@ -1,4 +1,4 @@
-body, h1, h2, p, a {
+.page, h1, h2, p, a {
   margin: 0;
   font-size: 30px;
   font-weight : normal;
@@ -6,15 +6,13 @@ body, h1, h2, p, a {
 * {
   box-sizing : border-box;
 }
-body {
+.page {
   background-image: url('/img/back.avif');
   width: 70%;
   font-family: 'Andale Mono', monospace;
   margin-right: auto;
   margin-left: auto;
 }
-
-
 .header {
   display: flex;
   border-radius: 10px;
@@ -31,7 +29,7 @@ body {
   font-weight: 500;
   margin : auto;
 }
-section {
+.content {
   background-color: #FFEBCD;
   border-radius: 10px;
   display: flex;
@@ -39,9 +37,8 @@ section {
   width : 100%;
   margin: 0 auto 0 auto;
 }
-.border_top_and_margin_up {
+.information_border_top {
  border-top: solid 2px white;
- margin-up: 20px;
 }
 .information {
   padding-top: 1%;
@@ -56,11 +53,11 @@ section {
   text-align: center;
   margin-bottom: 20px;
 }
-.without_padding {
+.information_without-padding {
  padding-left: 0;
   padding-right: 0;
 }
-.information__my_photo {
+.information__my-photo {
   box-shadow: 0 0 7px #666;
   border-radius: 50%;
   overflow: hidden;
@@ -73,66 +70,44 @@ section {
   font-size: 2em;
 }
 .text {
-  font-weight: 500;
   word-wrap: break-word;
 }
-
-.smaller_title {
+.title_smaller {
   font-size: 130%;
 }
-.information__interests__interest__photo_box__interest_photo {
+.information__interest-photo {
   padding-right: 4%;
   padding-left: 4%;
   height: 100%;
   width:100%;
 }
-.information__skills {
+.list {
   margin-top: 0;
   margin-bottom :0;
-  list-style-type: none;
-  list-style-position: inside;
-  display:flex;
-  text-align: center;
-  flex-direction: column;
+  list-style: none;
   padding-left: 0;
 }
 
-.option {
-  word-wrap: break-word;
-  width: 100%;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.information__school {
-  width : 100%;
-  font-weight: 500;
-}
 .information__interests {
   border-right:none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.information__interests__interest {
+.information__interest {
   border-right: none;
   width : 100%;
   display:flex;
   flex-direction: row;
 }
-.information__interests__interest__with_bottom_and_right_border {
+.information__interest_with-bottom-and-right-border {
   border-right:solid 1px white;
 }
-.information__interests__interest__photo_box {
-  border-right:none;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.information__photo-box {
   width : 100%;
   height: 100%;
 }
-.information__interests__interest__photo_box__with_left_border {
+.information__photo-box_with-left-border {
     border-left: solid 1px white;
 }
 .footer {
@@ -157,29 +132,29 @@ section {
   display: flex;
   flex-direction: row;
 }
-.footer__links__link {
+.footer__link {
   width: 33%;
   height: 100%;
 }
-.social_link {
+.social-link {
   max-width: 56px;
   width: 100%;
 }
-.with_margin {
+.text_with-margin {
   margin-top: 10px;
 }
 @media (max-width: 768px) {
-    body, p, h1 {
+    .page, p, h1 {
         font-size: 1.2rem;
     }
     .information__interests {
        flex-direction: column;
     }
-    .information__interests__interest__with_bottom_and_right_border {
+    .information__interest_with-bottom-and-right-border {
       border-bottom: solid 1px white;
       border-right: none;
     }
-    .information__interests__interest__photo_box__interest_photo {
+    .information__interest-photo {
       height:10%;
     }
 }
