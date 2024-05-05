@@ -47,7 +47,7 @@
 }
 .page {
   background-image: url('/img/back.avif');
-  width: 72%;
+  width: 80%;
   height: 100%;
   position: relative;
   font-family: 'Andale Mono', monospace;
@@ -174,7 +174,7 @@
   padding-bottom: 10px;
   display: none;
   position: fixed;
-  width: 72%;
+  width: 80%;
   bottom: 0;
   left: 0;
   right:0;
@@ -352,9 +352,6 @@
     user-select: none;
     padding: 16px;
     transition: background 0.6s ease;
-}
-.pop-up__prev:hover, .pop-up__next:hover, .pop-up__close::hover, .form-button::hover {
-    background-color: rgba(255,255,255,0.8);
 }
 .pop-up__prev {
   left: 0;
