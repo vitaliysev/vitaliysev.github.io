@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class = "page">
+<div class="progress-container">
+    <div id="progress"></div>
+</div>
 <header class = "header">
   <h1 class = "header__title">About me</h1>
 </header>
@@ -58,8 +61,65 @@
             </div>
         </div>
     </div>
+    <div class = "information information_border_top">
+        <div id="information__clock"></div>
+    </div>
+    <div class = "information information_border_top information_without-padding">
+        <h2 class = "title">My photos</h2>
+        <div class = "information__gallery">
+            <div class = "information__pair">
+                <div class = "information__photo-box">
+                    <img class = "information__gallery-photo" alt="books" src="img/yerevan.jpg">
+                </div>
+                <div class = "information__photo-box">
+                    <img class = "information__gallery-photo" alt="books" src="img/moscow.jpg">
+                </div>
+            </div>
+            <div class = "information__pair">
+                <div class = "information__photo-box">
+                    <img class = "information__gallery-photo" alt="english" src="img/spb.jpg">
+                </div>
+                <div class = "information__photo-box">
+                    <img class = "information__gallery-photo" alt="music" src="img/zhivago.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class = "pop-up">
+        <span class = "pop-up__close">&times;</span>
+        <img class = "pop-up__image" src = "img/yerevan.jpg" alt = "photo in Yerevan">
+        <a class="pop-up__prev">&#10094;</a>
+        <a class="pop-up__next">&#10095;</a>
+    </div>
 </main>
 <footer class = "footer">
+    <div class = "footer__container">
+    <button class = "form-button">Feedback</button>
+    <div class = "timer_pop-up">
+        <div class = "pop-up__body">
+            <div class = "container">
+                <span class = "form__close">&times;</span>
+                <p class = "text">Are you still here?</p>
+            </div>
+        </div>
+    </div>
+    <div class = "form_pop-up">
+        <div class = "pop-up__body">
+            <div class = "form_container">
+                <p class = "text text_with-margin">Form</p>
+                <span class = "form__close">&times;</span>
+                <form class="holder">
+                    <input class = "form__input" placeholder="Name" />
+                    <input class="form__input" placeholder="number(starting with +)">
+                    <input class = "form__input" placeholder="Email" />
+                    <textarea class = "form__input form__input_bigger" placeholder="Review"></textarea>
+                    <button class="subscribe-button">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class = "footer__container">
     <p class = "text text_with-margin">Links</p>
     <div class = "footer__links">
         <div class = "footer__link">
@@ -72,6 +132,12 @@
             <a href="https://github.com/vitaliysev"><img class = "social-link" alt = "Github" src="img/github.avif"></a>
         </div>
     </div>
+    </div>
 </footer>
 </body>
+<script src="scripts/gallery_pop-up.js"></script>
+<script src = "scripts/form_pop-up.js"></script>
+<script src = "scripts/counter.js"></script>
+<script src = "scripts/timer_pop-up.js"></script>
+<script src = "scripts/footer.js"></script>
 </html>
