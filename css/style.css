@@ -47,7 +47,7 @@
 }
 .page {
   background-image: url('/img/back.avif');
-  width: 80%;
+  width: 85%;
   height: 100%;
   position: relative;
   font-family: 'Andale Mono', monospace;
@@ -174,7 +174,7 @@
   padding-bottom: 10px;
   display: none;
   position: fixed;
-  width: 80%;
+  width: 85%;
   bottom: 0;
   left: 0;
   right:0;
