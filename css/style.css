@@ -99,11 +99,11 @@
   padding-right: 0;
 }
 .information__my-photo {
+  display : flex;
   box-shadow: 0 0 7px #666;
   border-radius: 50%;
   overflow: hidden;
-  height: 50%;
-  min_width: 500px;
+  max-width: 500px;
   width: 50%;
 }
 .title {
@@ -387,6 +387,6 @@
       width: 80%;
     }
     .information__interest-photo {
-      width: 182px;
+      width: 180px;
     }
 }
