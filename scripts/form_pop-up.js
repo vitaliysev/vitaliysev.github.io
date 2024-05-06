@@ -64,14 +64,12 @@
     });
     form.addEventListener('submit', function (event) {
       event.preventDefault();
-      console.log('clicked on validate')
       var errors = form.querySelectorAll('.error')
 
       for (var i = 0; i < errors.length; i++) {
         errors[i].remove()
       }
       if (!fields[0].value) {
-        console.log('field is blank', fields[i]);
         var error = document.createElement('div')
         error.className='error'
         error.style.color = 'red'
@@ -80,7 +78,6 @@
         form[0].parentElement.insertBefore(error, fields[0]);
       }
       if (!fields[1].value) {
-        console.log('field is blank', fields[i]);
         var error = document.createElement('div')
         error.className='error'
         error.style.color = 'red'
@@ -88,7 +85,6 @@
         error.innerHTML = 'Cannot be blank'
         form[1].parentElement.insertBefore(error, fields[1]);
       } else if (!isValidNumber(fields[1].value)) {
-        console.log('incorrect number');
         var error = document.createElement('div')
         error.className='error'
         error.style.color = 'red'
@@ -104,7 +100,6 @@
         error.innerHTML = 'Cannot be blank'
         form[2].parentElement.insertBefore(error, fields[2]);
       } else if (!isValidEmail(fields[2].value)) {
-        console.log('incorrect email');
         var error = document.createElement('div')
         error.className='error'
         error.style.color = 'red'
@@ -113,7 +108,6 @@
         form[2].parentElement.insertBefore(error, fields[2]);
       }
       if (!fields[3].value) {
-        console.log('field is blank');
         var error = document.createElement('div')
         error.className='error'
         error.style.color = 'red'
