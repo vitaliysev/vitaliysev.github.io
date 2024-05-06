@@ -376,6 +376,9 @@
     .information__gallery {
       flex-direction: column;
     }
+    .information__gallery-photo {
+      width: 300px;
+    }
     .information__interest_with-bottom-and-right-border {
       border-bottom: solid 1px white;
       border-right: none;
