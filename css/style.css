@@ -124,7 +124,8 @@
 .information__gallery-photo {
   padding-right: 4%;
   padding-left: 4%;
-  width:100%;
+  max-width:100%;
+  width: 600px;
 }
 .list {
   margin-top: 0;
