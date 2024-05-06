@@ -1,6 +1,6 @@
 
-    const TimerPopUp = document.querySelector(".timer_pop-up");
-    const closeBtn = TimerPopUp.querySelector(".form__close");
+    const TimerPopUp = document.querySelector(".footer__timer-pop-up");
+    const closeBtn = TimerPopUp.querySelector(".pop-up-close");
     closeBtn.addEventListener("click", closeForm);
     setTimeout(function(){
       if (!sessionStorage.getItem('popupClosed')){

@@ -1,13 +1,14 @@
-    const popUpHolder = document.querySelector(".form_pop-up");
-    const openFormBtn = document.querySelector(".form-button");
-    const closeFormBtn = popUpHolder.querySelector(".form__close");
-    const form = document.querySelector(".holder");
-    let fields = form.querySelectorAll('.form__input');
+    const popUpHolder = document.querySelector(".footer__form-pop-up");
+    const openFormBtn = document.querySelector(".footer__form-button");
+    const closeFormBtn = popUpHolder.querySelector(".pop-up-close");
+    const body = popUpHolder.querySelector(".footer__pop-up-body");
+    const form = document.querySelector(".footer__pop-up-body__holder");
+    let fields = form.querySelectorAll('.footer__pop-up-body__holder__input');
     openFormBtn.addEventListener("click", openForm);
     closeFormBtn.addEventListener("click", closeForm);
-    const submitBtn = document.querySelector(".subscribe-button");
+    const submitBtn = document.querySelector(".footer__pop-up-body__holder__send-button");
     let title = popUpHolder.querySelector(".text");
-    let container = document.querySelector(".form_container");
+    let container = document.querySelector(".footer__form-container");
 
     function closeForm() {
       var errors = form.querySelectorAll('.error')
@@ -33,6 +34,34 @@
       popUpHolder.style.visibility = "visible";
       popUpHolder.style.opacity = '1';
     }
+    fields[0].addEventListener('click', function(event) {
+      var errors = form.querySelectorAll('.error')
+
+      for (var i = 0; i < errors.length; i++) {
+        errors[i].remove()
+      }
+    });
+    fields[1].addEventListener('click', function(event) {
+      var errors = form.querySelectorAll('.error')
+
+      for (var i = 0; i < errors.length; i++) {
+        errors[i].remove()
+      }
+    });
+    fields[2].addEventListener('click', function(event) {
+      var errors = form.querySelectorAll('.error')
+
+      for (var i = 0; i < errors.length; i++) {
+        errors[i].remove()
+      }
+    });
+    fields[3].addEventListener('click', function(event) {
+      var errors = form.querySelectorAll('.error')
+
+      for (var i = 0; i < errors.length; i++) {
+        errors[i].remove()
+      }
+    });
     form.addEventListener('submit', function (event) {
       event.preventDefault();
       console.log('clicked on validate')
@@ -127,7 +156,7 @@ return emailPattern.test(email);
     }
 
  function sendData(data) {
-        fetch('http://test.test', {
+        fetch('https://jsonplaceholder.typicode.com/posts', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -136,8 +165,12 @@ return emailPattern.test(email);
         })
         .then(response => response.json())
         .then(data => {
-            submitBtn.textContent = "Successfully send";
+            container.style.height = '10%';
+            container.style.padding = '0 1% 1% 1%';
+            form.style.display = 'none';
+            title.textContent = 'Thank You!';
         })
+
         .catch(error => {
             container.style.height = '10%';
             container.style.padding = '0 1% 1% 1%';
