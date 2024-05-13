@@ -35,31 +35,33 @@
       popUpHolder.style.opacity = '1';
     }
     fields[0].addEventListener('click', function(event) {
-      var errors = form.querySelectorAll('.error')
-
-      for (var i = 0; i < errors.length; i++) {
-        errors[i].remove()
+      var error = fields[0].previousElementSibling;
+      if (error) {
+      error.remove();
       }
     });
     fields[1].addEventListener('click', function(event) {
-      var errors = form.querySelectorAll('.error')
+      var error = fields[1].previousElementSibling;
 
-      for (var i = 0; i < errors.length; i++) {
-        errors[i].remove()
+
+      if (error.className == 'error') {
+      error.remove();
       }
     });
     fields[2].addEventListener('click', function(event) {
-      var errors = form.querySelectorAll('.error')
+      var error = fields[2].previousElementSibling;
 
-      for (var i = 0; i < errors.length; i++) {
-        errors[i].remove()
+
+      if (error.className == 'error') {
+      error.remove();
       }
     });
     fields[3].addEventListener('click', function(event) {
-      var errors = form.querySelectorAll('.error')
+      var error = fields[3].previousElementSibling;
 
-      for (var i = 0; i < errors.length; i++) {
-        errors[i].remove()
+
+      if (error.className == 'error') {
+      error.remove();
       }
     });
     form.addEventListener('submit', function (event) {
